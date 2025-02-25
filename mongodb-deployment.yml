@@ -20,16 +20,5 @@ spec:
         env:
         - name: MONGO_INITDB_DATABASE
           value: "myDatabase"  # Change this if necessary
---- 
-apiVersion: v1
-kind: Service
-metadata:
-  name: mongodb
-spec:
-  selector:
-    app: mongodb
-  ports:
-    - port: 27017
-      targetPort: 27017
-      protocol: TCP
+
 
