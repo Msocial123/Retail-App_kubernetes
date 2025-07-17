@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: usernode-js-service
 spec:
-  type: ClusterIP  # Use NodePort if LoadBalancer is not supported
+  type: LoadBalancer  # Use NodePort if LoadBalancer is not supported
   ports:
     - port: 3130
       targetPort: 3130
